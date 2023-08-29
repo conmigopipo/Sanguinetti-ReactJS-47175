@@ -1,0 +1,16 @@
+{
+    "cuadros": [
+        {
+            "titulo": "Mientras pasea la luna",
+            "descripcion": "Óleo sobre tela. Criaturas de este universo siguen apareciendo. Una misteriosa ave lleva atada la luna mientras nuestro personaje parece imperturbado.",
+            "autor": "Nvjo",
+            "id": 1
+        },
+        {
+            "titulo": "Desmaterializado",
+            "descripcion": "Mismo universo planteado por Nvjo. Esta vez en un plano bidimensional y en blanco y negro. Podemos ver detrás del personaje un fondo difuminado producto de distintas capas de pintura.",
+            "autor": "Nvjo",
+            "id": 2 
+        }
+    ]
+}

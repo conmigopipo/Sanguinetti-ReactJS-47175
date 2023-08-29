@@ -14,18 +14,11 @@ function App() {
   return (
     <div className=''>
       <NavBar />
-      <div>
-        <ItemListContainer saludo={'Bienvenido/a, gracias por elegirnos.'}/>
-      </div>
       <div className='d-flex justify-content-start'>
         <Titulo />
       </div>
-      <div className='bg-gradient-warning'>
-          <p>soy contenino</p>
-          <p>soy contenino</p>
-          <p>soy contenino</p>
-          <p>soy contenino</p>
-          <p>soy contenino</p>
+      <div>
+        <ItemListContainer saludo={'Bienvenido/a, gracias por elegirnos.'}/>
       </div>
     </div>
   )
