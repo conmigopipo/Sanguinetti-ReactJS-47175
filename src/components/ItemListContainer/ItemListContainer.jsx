@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import ItemList from "../ItemList/ItemList"
 
-
 const ItemListContainer = (greeting) => {
   const [pinturas, setPinturas] = useState(null)
   const [cargando, setCargando] = useState(true)
@@ -9,7 +8,8 @@ const ItemListContainer = (greeting) => {
   async function fetchCuadros (){
     try{
       //npx json-server --watch data/database.json --port 8000 
-      const URLCuadros = "http://localhost:8000/cuadros"
+      //const URLCuadros = "http://localhost:8000/cuadros"
+      const URLCuadros = "../../../data/database.json"
       const cuadrosJSON = await fetch(URLCuadros)
       const cuadrosArray = await cuadrosJSON.json()
       setPinturas(cuadrosArray)
@@ -38,7 +38,7 @@ const ItemListContainer = (greeting) => {
           {cargando ? (
             <p  className="text-center m-2">Cargando...</p>
           ) : (
-            <ItemList pinturas={pinturas}/>
+            <ItemList pinturas={pinturas.cuadros}/>
           )
         } 
         </div>
