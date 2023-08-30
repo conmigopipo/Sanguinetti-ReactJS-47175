@@ -4,6 +4,7 @@ import ItemList from "../ItemList/ItemList"
 
 const ItemListContainer = (greeting) => {
   const [pinturas, setPinturas] = useState(null)
+  const [cargando, setCargando] = useState(true)
   
   async function fetchCuadros (){
     try{
@@ -11,6 +12,7 @@ const ItemListContainer = (greeting) => {
       const cuadrosJSON = await fetch(URLCuadros)
       const cuadrosArray = await cuadrosJSON.json()
       setPinturas(cuadrosArray)
+      setCargando(false)
     } catch(error){
         console.error("se ha producido un error", error)
     }
@@ -29,7 +31,12 @@ const ItemListContainer = (greeting) => {
       <div>
         <h2 className="p-3 pb-0 text-primary">Nuestros Cuadros:</h2>
         <div>
-          {pinturas && <ItemList pinturas={pinturas}/>}
+          {cargando ? (
+            <p  className="text-center m-2">Cargando...</p>
+          ) : (
+            <ItemList pinturas={pinturas}/>
+          )
+        } 
         </div>
       </div>
     </>

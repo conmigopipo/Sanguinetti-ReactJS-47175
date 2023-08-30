@@ -3,7 +3,7 @@ const ItemList = ({pinturas}) => {
   return (
     <div className="row justify-content-around mt-4">
         {pinturas.map((cuadro)=>(
-            <div className="col-5 card border-black shadow">
+            <div className="col-5 card border-black shadow" key={cuadro.id}>
                 <div className="card-header">
                     <h2>"{cuadro.titulo}"</h2>
                 </div>
