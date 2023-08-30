@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className=''>
+    <>
       <NavBar />
       <div className='d-flex justify-content-start'>
         <Titulo />
@@ -20,7 +20,7 @@ function App() {
       <div>
         <ItemListContainer saludo={'Bienvenido/a, gracias por elegirnos.'}/>
       </div>
-    </div>
+    </>
   )
 }
 
