@@ -8,11 +8,15 @@ const ItemListContainer = (greeting) => {
   
   async function fetchCuadros (){
     try{
+      //npx json-server --watch data/database.json --port 8000 
       const URLCuadros = "http://localhost:8000/cuadros"
       const cuadrosJSON = await fetch(URLCuadros)
       const cuadrosArray = await cuadrosJSON.json()
       setPinturas(cuadrosArray)
-      setCargando(false)
+      setTimeout(()=>{
+        setCargando(false)
+      }, 2000)
+      
     } catch(error){
         console.error("se ha producido un error", error)
     }
