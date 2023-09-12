@@ -1,26 +1,51 @@
-import { useState } from 'react'
-
-import NavBar from './components/NavBar/NavBar';
-import Titulo from './components/Titulo/Titulo';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-
-//import './App.css'
+import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Home from './components/Home/Home';
+import ItemListContainer, {discosLoader} from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer, { discoDetalleLoader } from './components/ItemDetailContainer/ItemDetailContainer'
+import CatHipHopListContainer from './components/Categorías/CatHipHop/CatHipHopListContainer';
+import CatRockListContainer from './components/Categorías/CatRock/CatRockListContainer';
+
+import RootLayout from './Layouts/RootLayout';
+import DiscosLayout from './Layouts/DiscosLayout';
+import { CartContext } from './context/cartContext';
+
+const prop = "mivalue"
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<RootLayout/>}>
+          
+          <Route path='discos' element={<DiscosLayout/>}>
+             <Route 
+                index 
+                element={<ItemListContainer />}
+                loader={discosLoader}
+                />
+              <Route  path='hip-hop' 
+                      element={<CatHipHopListContainer/>} 
+                      loader={discosLoader}/>
+              <Route  path='rock' 
+                      element={<CatRockListContainer/>} 
+                      loader={discosLoader}/>
+              <Route
+                path=':id'
+                element={<ItemDetailContainer/>}
+                loader={discoDetalleLoader}
+              />
+          </Route>
+          <Route index element={<Home saludo={'Bienvenido/a, gracias por elegirnos.'} /> } /> 
+    </Route>
+  )
+)
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <NavBar />
-      <div className='d-flex justify-content-start'>
-        <Titulo />
-      </div>
-      <div>
-        <ItemListContainer saludo={'Bienvenido/a, gracias por elegirnos.'}/>
-      </div>
-    </>
+    <CartContext.Provider 
+    value={prop}>
+        <RouterProvider router={router}/>
+    </CartContext.Provider>  
   )
 }
 

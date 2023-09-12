@@ -1,16 +1,65 @@
 {
-    "cuadros": [
+    "discos": [
         {
-            "titulo": "Mientras pasea la luna",
-            "descripcion": "Óleo sobre tela. Criaturas de este universo siguen apareciendo. Una misteriosa ave lleva atada la luna mientras nuestro personaje parece imperturbado.",
-            "autor": "Nvjo",
-            "id": 1
+            "titulo": "El Circulo",
+            "genero": "Hip-hop",
+            "autor": "Kase.o",
+            "fechaEstreno": "23 de Septiembre, 2016",
+            "id": 1,
+            "icon": "data/portadas-discos/el-circulo.jpg",
+            "stock": 6,
+            "precio": 10.80
         },
         {
-            "titulo": "Desmaterializado",
-            "descripcion": "Mismo universo planteado por Nvjo. Esta vez en un plano bidimensional y en blanco y negro. Podemos ver detrás del personaje un fondo difuminado producto de distintas capas de pintura.",
-            "autor": "Nvjo",
-            "id": 2 
+            "titulo": "El Ritmo Del Barrio",
+            "genero": "Rock",
+            "autor": "La Abuela Coca",
+            "fechaEstreno": "11 de Octubre, 2001",
+            "id": 2,
+            "icon": "data/portadas-discos/el-ritmo-del-barrio.jpg",
+            "stock": 4,
+            "precio": 13.80
+        },
+        {
+            "titulo": "La Ley Innata",
+            "genero": "Rock",
+            "autor": "Extremoduro",
+            "fechaEstreno": "9 de Septiembre, 2008",
+            "id": 3,
+            "icon": "data/portadas-discos/la-ley-innata.jpg",
+            "stock": 9,
+            "precio": 8.50
+        },
+        {
+            "titulo": "Stoney",
+            "genero": "Hip-hop", 
+            "autor": "Post Malone",
+            "fechaEstreno": "9 de Diciembre, 2016",
+            "id": 4,
+            "icon": "data/portadas-discos/stoney.jpg",
+            "stock": 7,
+            "precio": 21.00
+        },
+        {
+            "titulo": "The Divine Feminine",
+            "genero": "Rock",
+            "autor": "Mac Miller",
+            "fechaEstreno": "16 de Septiembre, 2016",
+            "id": 5,
+            "icon": "data/portadas-discos/the-divine-feminine.jpg",
+            "stock": 2,
+            "precio": 9.90
+        },
+        {
+            "titulo": "El Libro Negro",
+            "genero": "Hip-hop",
+            "autor": "T&K",
+            "fechaEstreno": "28 de Septiembre, 2018",
+            "id": 6,
+            "icon": "data/portadas-discos/el-libro-negro.jpg",
+            "stock": 4,
+            "precio": 17.40
         }
     ]
 }
+

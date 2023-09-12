@@ -1,0 +1,10 @@
+nav div div ul li a.active{
+    background: rgb(201, 231, 255);
+    border-radius: 5%;
+}
+
+.navbar-brand{
+    background-color: rgb(237, 237, 234);
+    border-radius: 50%;
+    padding: 0px 10px;
+}

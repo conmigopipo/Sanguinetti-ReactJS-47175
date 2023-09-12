@@ -1,0 +1,27 @@
+.discos-layout nav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    justify-content: end;
+}
+.discos-layout nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin-right: 30px;
+}
+.discos-layout nav ul li{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+
+}
+.discos-layout nav ul li:hover{
+    border-color: aqua;
+}
+.discos-layout nav ul li.active{
+    background-color: aqua;
+}

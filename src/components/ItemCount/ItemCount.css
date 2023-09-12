@@ -1,0 +1,26 @@
+.div-counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.div-counter button{
+    border-radius: 10px;
+    border-color: rgb(188, 219, 219);
+    background-color: rgb(210, 206, 201);
+    width: 50px;
+}
+.div-counter button:last-child{
+    width: 160px;
+}
+.div-counter div{
+    border-color: rgb(160, 223, 223);
+    background-color: rgb(32, 32, 29);
+    border-radius: 10px;
+    border-style: groove;
+    color:wheat ;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    height: 29.2px;
+}
