@@ -2,11 +2,11 @@
 
 By: Felipe Sanguinetti
 
-Deploy- DEMO: -https://tangerine-moonbeam-b495ff.netlify.app/
+# Deploy- DEMO: -https://tangerine-moonbeam-b495ff.netlify.app/
 
 Mock page en el marco de la entrega final del curso REACT-JS en Coderhouse.
 
-Librerías usadas:
+## Librerías usadas:
 -Bootstrap: "^5.3.1" - Librería de estilos
 -Firebase: "^10.4.0" - Database
 -React-bootstrap: "^2.8.0" - Librería de estilos
@@ -16,4 +16,4 @@ Librerías usadas:
 -React-dom: "^18.2.0"
 
 
-## npm run dev para hosting de manera local.
+### npm run dev para hosting de manera local.
