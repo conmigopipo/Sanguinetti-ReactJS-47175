@@ -1,12 +1,13 @@
 import { useState } from "react"
 import './ItemCount.css'
+import { Link } from "react-router-dom"
 
 
 
 const ItemCount = ({stock, initial, onAdd}) => {
 
   const [counter, setCounter] = useState(initial)
-
+  const [toCart, setToCart] = useState(false)
   const handleRestar = ()=>{
     if (counter > initial) setCounter(counter - 1)
   }
@@ -14,8 +15,15 @@ const ItemCount = ({stock, initial, onAdd}) => {
     if (counter < stock) setCounter(counter + 1)
   }
 
-  const handleOnAdd = () => onAdd(counter)
+  const handleOnAdd = () => {
+    onAdd(counter)
+    setToCart(true)
+  }
   return (
+      toCart === true 
+      ?
+      <Link to={'/carrito'}><button className="btn btn-success">Ir al Carrito</button></Link>
+      :
     <>
       <div className="div-counter row">
           <button className="col-1 btn" onClick={handleRestar}>-1</button>

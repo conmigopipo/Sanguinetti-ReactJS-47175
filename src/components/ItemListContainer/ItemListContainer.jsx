@@ -19,7 +19,7 @@ const ItemListContainer = () => {
       const queryCollection = collection(db, 'discos')
       getDocs(queryCollection)
       .then(resp => setDiscos(resp.docs.map(disco => ({id: disco.id, ...disco.data()}))))
-      .then(setLoading(false)) 
+      .finally(setLoading(false)) 
   },[])
 
 

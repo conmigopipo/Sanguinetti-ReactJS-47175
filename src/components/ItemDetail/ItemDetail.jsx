@@ -3,6 +3,7 @@ import ItemCount from "../ItemCount/ItemCount"
 import { useContext } from "react"
 import { CartContext } from "../../context/cartContext"
 import TextComponentStock from "../textComponents/textComponentStock"
+import { Link } from "react-router-dom"
 
 const ItemDetail = ( {disco} ) => {
   
