@@ -1,4 +1,4 @@
-Break Your Neck
+# Break Your Neck
 
 By: Felipe Sanguinetti
 
@@ -16,4 +16,4 @@ Librerías usadas:
 -React-dom: "^18.2.0"
 
 
-##npm run dev para hosting de manera local.
+## npm run dev para hosting de manera local.
