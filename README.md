@@ -1,8 +1,20 @@
-# React + Vite
+# Break Your Neck
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+By: Felipe Sanguinetti
 
-Currently, two official plugins are available:
+# Deploy- DEMO: -https://tangerine-moonbeam-b495ff.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Mock page en el marco de la entrega final del curso REACT-JS en Coderhouse.
+
+Librerías usadas:
+
+-Bootstrap: "^5.3.1" - Librería de estilos /
+-Firebase: "^10.4.0" - Database /
+-React-bootstrap: "^2.8.0" - Librería de estilos /
+-React-router-dom: "^6.15.0" - Enrutado de la aplicación /
+-Sweetalert2: "^11.7.27" - Librería de alertas /
+-React: "^18.2.0" /
+-React-dom: "^18.2.0"
+
+
+### npm run dev para hosting de manera local.
