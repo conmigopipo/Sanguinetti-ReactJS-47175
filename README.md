@@ -6,7 +6,7 @@ By: Felipe Sanguinetti
 
 Mock page en el marco de la entrega final del curso REACT-JS en Coderhouse.
 
-## Librerías usadas:
+Librerías usadas:
 -Bootstrap: "^5.3.1" - Librería de estilos
 -Firebase: "^10.4.0" - Database
 -React-bootstrap: "^2.8.0" - Librería de estilos
