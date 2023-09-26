@@ -6,7 +6,7 @@
             "autor": "Kase.o",
             "fechaEstreno": "23 de Septiembre, 2016",
             "id": 1,
-            "icon": "data/portadas-discos/el-circulo.jpg",
+            "portada": "https://ibb.co/y0mj6KJ",
             "stock": 6,
             "precio": 10.80
         },
@@ -16,7 +16,7 @@
             "autor": "La Abuela Coca",
             "fechaEstreno": "11 de Octubre, 2001",
             "id": 2,
-            "icon": "data/portadas-discos/el-ritmo-del-barrio.jpg",
+            "portada": "https://ibb.co/cQ88Rq5",
             "stock": 4,
             "precio": 13.80
         },
@@ -26,7 +26,7 @@
             "autor": "Extremoduro",
             "fechaEstreno": "9 de Septiembre, 2008",
             "id": 3,
-            "icon": "data/portadas-discos/la-ley-innata.jpg",
+            "portada": "https://ibb.co/fp5kNZ8",
             "stock": 9,
             "precio": 8.50
         },
@@ -36,17 +36,17 @@
             "autor": "Post Malone",
             "fechaEstreno": "9 de Diciembre, 2016",
             "id": 4,
-            "icon": "data/portadas-discos/stoney.jpg",
+            "portada": "https://ibb.co/RTctCLg",
             "stock": 7,
             "precio": 21.00
         },
         {
             "titulo": "The Divine Feminine",
-            "genero": "Rock",
+            "genero": "Hip-hop",
             "autor": "Mac Miller",
             "fechaEstreno": "16 de Septiembre, 2016",
             "id": 5,
-            "icon": "data/portadas-discos/the-divine-feminine.jpg",
+            "portada": "https://ibb.co/PQ6x398",
             "stock": 2,
             "precio": 9.90
         },
@@ -56,7 +56,7 @@
             "autor": "T&K",
             "fechaEstreno": "28 de Septiembre, 2018",
             "id": 6,
-            "icon": "data/portadas-discos/el-libro-negro.jpg",
+            "portada": "https://ibb.co/W6bFDvq",
             "stock": 4,
             "precio": 17.40
         }

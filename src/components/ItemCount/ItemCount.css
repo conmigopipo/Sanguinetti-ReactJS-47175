@@ -13,14 +13,16 @@
 .div-counter button:last-child{
     width: 160px;
 }
+
 .div-counter div{
-    border-color: rgb(160, 223, 223);
-    background-color: rgb(32, 32, 29);
+    border-color: rgb(39, 49, 49);
+    background-color: rgba(45, 41, 255, 0.483);
     border-radius: 10px;
     border-style: groove;
-    color:wheat ;
+    color:rgb(0, 0, 0) ;
     width: 50px;
     display: flex;
     justify-content: center;
     height: 29.2px;
 }
+

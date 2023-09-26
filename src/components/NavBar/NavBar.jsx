@@ -4,6 +4,9 @@ import './NavBar.css'
 import CartWidget from "../CartWidget/CartWidget"
 
 const NavBar = () => {
+
+    
+
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary shadow">
             <div className="container-fluid">
@@ -20,14 +23,15 @@ const NavBar = () => {
                             <NavLink to="/discos" className="nav-link text-secondary">Discos</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/discos/rock" className="nav-link text-secondary">Rock</NavLink>
+                            <NavLink to="/discos/category/rock" className="nav-link text-secondary">Rock</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/discos/hip-hop" className="nav-link text-secondary">Hip-Hop</NavLink>
+                            <NavLink to="/discos/category/hip-hop" className="nav-link text-secondary">Hip-Hop</NavLink>
                         </li>
                     </ul>
-                    
-                    <div className="m-2"><CartWidget/></div>
+                    <Link to={'/carrito'}>
+                        <div className="m-2"><CartWidget /></div>
+                    </Link>
                 </div>
             </div>
         </nav>

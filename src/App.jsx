@@ -1,51 +1,47 @@
 import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider} from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './components/Home/Home';
-import ItemListContainer, {discosLoader} from './components/ItemListContainer/ItemListContainer';
-import ItemDetailContainer, { discoDetalleLoader } from './components/ItemDetailContainer/ItemDetailContainer'
-import CatHipHopListContainer from './components/Categorías/CatHipHop/CatHipHopListContainer';
-import CatRockListContainer from './components/Categorías/CatRock/CatRockListContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import { CartContainer } from './components/CartContainer/CartContainer';
 
 import RootLayout from './Layouts/RootLayout';
 import DiscosLayout from './Layouts/DiscosLayout';
-import { CartContext } from './context/cartContext';
+import CartContextProvider from './context/cartContext';
 
-const prop = "mivalue"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout/>}>
-          
           <Route path='discos' element={<DiscosLayout/>}>
              <Route 
                 index 
                 element={<ItemListContainer />}
-                loader={discosLoader}
                 />
-              <Route  path='hip-hop' 
-                      element={<CatHipHopListContainer/>} 
-                      loader={discosLoader}/>
-              <Route  path='rock' 
-                      element={<CatRockListContainer/>} 
-                      loader={discosLoader}/>
+              <Route  path='category/:idCategory' 
+                      element={<ItemListContainer />} 
+                      />
               <Route
                 path=':id'
                 element={<ItemDetailContainer/>}
-                loader={discoDetalleLoader}
               />
           </Route>
+          <Route
+            path='carrito'
+            element={<CartContainer/>}
+          />
           <Route index element={<Home saludo={'Bienvenido/a, gracias por elegirnos.'} /> } /> 
     </Route>
   )
-)
-
+  )
+  
+const prop = "mivalue"
 function App() {
   return (
-    <CartContext.Provider 
-    value={prop}>
+    <CartContextProvider>
         <RouterProvider router={router}/>
-    </CartContext.Provider>  
+    </CartContextProvider>  
   )
 }
 

@@ -8,10 +8,10 @@ const item = ({disco}) => {
                 </div>
                 <p className="mb-0 p-1">Autor: {disco.autor}</p>
                 <div className="card-body d-flex justify-content-center">
-                    <img src={ disco.icon } alt="imágen del disco" className="img-fluid"/>
+                    <img src={ disco.portada } alt="imágen del disco" className="img-fluid"/>
                 </div>
                 <div className="card-footer h-25 ">
-                  <Link to={disco.id.toString()} disco={disco} className="btn btn-outline-dark w-100">Detalle</Link>
+                  <Link to={"/discos/" + disco.id.toString()} disco={disco} className="btn btn-outline-dark w-100">Detalle</Link>
                 </div> 
           </div>
   )

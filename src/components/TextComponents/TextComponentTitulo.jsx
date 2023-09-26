@@ -1,4 +1,4 @@
-const Titulo = () => {
+const TextComponentTitulo = () => {
   return (
     <div className="p-3">
         <h1 className="text-primary">Break Your Neck</h1>
@@ -9,4 +9,4 @@ const Titulo = () => {
 }
 
 
-export default Titulo
+export default TextComponentTitulo
