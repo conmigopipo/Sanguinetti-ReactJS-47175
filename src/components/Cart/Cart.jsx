@@ -3,8 +3,7 @@ import { useCartContext } from "../../context/cartContext"
 const Cart = ({disco}) => {
 
     const {eliminarProducto} = useCartContext()
-    console.log(disco)
-    console.log(disco.precio)
+
     return (
                 <tr>
                     <th scope="row" >{disco.titulo}</th>

@@ -137,11 +137,13 @@ const FormFinalizarCompra = () => {
                     <p className="text-danger m-2 mt-0 fst-italic fw-light">{errors.telefono}</p>
                 </label>
             </div>
-            <div className="col-1">
-                <button className="btn btn-danger m-3 mt-1" onClick={emptyCart}>Vaciar Carrito</button>
-            </div>
-            <div>
-                <button type="submit" className="btn btn-outline-success m-3 mt-1">Finalizar Compra.</button>
+            <div className="d-flex justify-content-between">
+                <div>
+                    <button type="submit" className="btn btn-outline-success m-3 mt-1">Finalizar Compra.</button>
+                </div>
+                <div>
+                    <button className="btn btn-danger m-3 mt-1" onClick={emptyCart}>Vaciar Carrito</button>
+                </div>
             </div>
         </form>
     )
